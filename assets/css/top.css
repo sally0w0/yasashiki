@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+
+
+
+/*section/doctorabout-------------------- */
+.doctorAbout {
+	margin-bottom: 80px;
+}
+
+.doctorAbout .inner {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.doctorAbout h2,
+.topics h2 {
+	font-size: 1.65rem;  /*26px相当*/
+	font-feature-settings: "palt";
+	margin-bottom: 40px;
+	color: #28c6a8;
+}
+
+.doctorAbout h2 span {
+	font-size: 2.25rem;
+	color: #28c6a8;
+}
+
+.aboutText {
+	max-width: 490px;
+    width: 100%;
+}
+
+.aboutText + p {
+	margin-right: 40px;
+    max-width: 360px;
+    width: 100%;
+} 
+
+.aboutText p:nth-of-type(1),
+.aboutText p:nth-of-type(2) {
+	padding-bottom: 1rem;
+}
+
+.doctorAbout img {
+	box-shadow: 10px 10px rgba( 255, 205, 48, .5);
+	border-radius: 15px;
+}
+
+.button::after {
+	/* content: url(../images/top_about_icon_arrow.svg); */
+}
+
+.button {
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.125rem; /* 18px相当 */
+	margin-top: 40px;
+}
+
+.button a {
+	display: inline-block;
+	padding: 0 50px;
+	background: #28c6a8; 
+	border-radius: 10px;
+	line-height: 3.1rem;
+}
+
+.button a:hover {
+	background: #ffcd30;
+}
+
+.button a::after {
+	content: url(../images/top_about_icon_arrow.svg);/*---------ボタンの矢印*/
+	display: inline-block;
+	width: 10px;
+	padding-left: 15px;
+}
+
+/* section/topics-------------------- */
+.topics {
+	background: #fffcec;
+	padding: 60px 0 80px;
+	position: relative;
+	
+}
+.topics .inner {
+	max-width: 800px;
+}
+.topics h2 {
+	text-align: center;
+	margin-bottom: 25px;
+	letter-spacing: 0.5rem;
+	position: relative;
+}
+
+.topics h2:after {
+	content: "";
+	display: inline-block;
+	width: 40px;
+	height: 4px;
+	background: #ffcd30;
+	position: absolute;
+	left: calc(50% - 20px);
+	bottom: -15%;
+}
+
+.topics dl {
+	letter-spacing: 0.1rem;
+}
+
+.topics dl div {
+	display: flex;
+	padding: 10px ;
+	border-top: 1px dotted #a67c52;
+}
+
+.topics dl div:last-child {
+	border-bottom: 1px dotted #a67c52;
+}
+
+.topics dt {
+	width: 10em;
+	font-weight: bold; 
+	color: #28c6a8;
+}
+
+.topics dd {
+	width: 100%;
+}
+
+.topics ul {
+	list-style: disc;
+	padding-left: 1em;
+}
+
+/* ----------section/menu---------- */
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	padding: 60px 20px;
+}
+
+.medicalMenu,
+.facilityMenu {
+	position: relative;
+	/* display: inline-block; */
+}
+
+.medicalMenu > div,
+.facilityMenu > div {
+	display: inline-block;
+}
+
+.menu h2 {
+	font-size: 1.875rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	color: #fff;
+	text-shadow: 1px 1px 4px #066654;
+	z-index: 1;
+}
+
+.menu p {
+	display: inline-block;
+	line-height: 0;
+}
+
+.menu p a {
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.menu a:hover img {
+	transform: scale(1.1);
+}
+
+.menu section {
+	width: 48%;
+}
+
+.menu img {
+	border-radius: 10px;
+	transition: all .2s;
+	color: #111;
+}
+
+/* .menu {
+	background: #fff;
+	padding: 60px 0;
+}
+.menu .inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu .inner div {
+	position: relative;
+	width: 48%;
+}
+
+.menu h2 {
+	font-size: 1.875rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50%);
+	color: #fff;
+	text-shadow: 1px 1px 4px #066654;
+	z-index: 1;
+}
+
+.menu p a:last-child {
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.menu p:last-child {
+	line-height: 0;
+}
+
+.menu img {
+	border-radius: 10px;
+	transition: all .2s;
+	color: #111;
+}
+
+.menu a {
+	display: block;
+}
+.menu a:hover img {
+	transform: scale(1.1);
+} */
+
+/* topのaccessと下層のaccess共通-------------------- */
+.accessInfo {
+	background: #fffcec;
+	padding: 85px 0 120px;
+}
+
+.accessInfo .inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 800px;
+}
+
+.accessInfo .address {
+	width: 50%;
+	min-width: 250px;
+}
+
+.accessInfo h2 {
+	font-size: 1.5rem; /*24px相当*/
+	letter-spacing: 0.1rem;
+	padding-bottom: 5px;
+	color: #28c6a8;
+}
+
+.accessInfo dl div {
+	display: flex;
+	padding: 10px 0;
+	border-top: 1px dotted #a67c52;
+}
+
+.accessInfo dl dt {
+	min-width: 5em;
+	font-weight: bold;
+}
+
+.accessInfo .map {
+	margin-left: 40px;
+}
+
+.accessInfo .map img {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(229, 228, 181, .5);
+}
+
+
+
+
+
+
+/* footer-------------------- */
+footer .footerNav li:nth-of-type(1) a {
+	opacity: .5;
+}
+
+
+/*コンテンツ幅より狭い用------------------------------------------------------------*/
+@media screen and (max-width: 767px){
+	/*.slider #slide {
+		min-height: 450px;
+	}
+
+	.slider #slide li img {
+		height: calc(100vh - 230px);
+		object-fit: cover;
+	}*/
+	
+
+
+	.slider table {
+		min-height: 0px;
+	}
+	
+	
+
+/*タブレット端末以下------------------------------------------------------------*/
+
+	/*メインビジュアル-----------------------------------------------*/
+	.slider {
+		margin-bottom: 15px;
+		background: #ffffff; 
+	}
+
+	.slider  #slide {
+		margin-bottom: 30px;
+	}
+
+	.slider .calendar {
+		width: 100%;
+		position: static;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.slider .calendar table {
+		min-height: 130px;
+	}
+
+	th:first-child {
+    text-align: left;
+    width: 7em;
+    padding: 5px 10px;
+	}
+
+	/*doctorabout-----------------------------------------------*/
+	.doctorAbout .inner {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.doctorAbout h2 {
+		letter-spacing: 0;
+		margin-bottom: 30px;
+	}
+	
+	.doctorAbout img {
+		margin-right: 0;
+		box-shadow: none;
+	}
+
+	.aboutText + p {
+		margin-right: 0;
+		margin-bottom: 40px;
+	} 
+	
+	.button {
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.button a {
+		display: block;
+	}
+	
+
+	/* section/topics-------------------- */
+	.topics dl div{
+		flex-direction: column;
+	}
+
+	.topics dt {
+		margin-bottom: 5px;
+	}
+	/* ----------section/menu---------- */
+	
+	.menu {
+		flex-direction: column;
+		padding: 50px 0 15px 0;
+	}
+
+	.menu section {
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: center;
+		display: inline;
+	}
+	
+	
+	/* .menu {
+		text-align:center;
+	}
+
+	.menu .inner {
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.menu .inner div {
+		margin-bottom: 30px;
+		width: 100%;
+	} */
+
+			/* ----------section/accessinfo---------- */
+	.accessInfo {
+		padding: 40px 0 70px;
+	}
+
+	.accessInfo .inner {
+		flex-direction: column;
+	}
+	
+	.accessInfo .address {
+		width: 100%;
+	}
+
+	.accessInfo h2 {
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.address dl {
+		margin-bottom: 20px;
+	}
+
+	.accessInfo .calendar {
+		margin-bottom: 30px;
+	}
+
+	.accessInfo .map {
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.accessInfo .address .calendar {
+		width: 100%;
+	}
+
+}

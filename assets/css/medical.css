@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+.title > p {
+		margin-bottom: 70px;
+	}
+
+
+/*診療案内--------------------------------------*/
+.medicalContents{
+	margin-bottom: 80px;
+}
+
+article {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	border-bottom: 1px dashed #a67c52;
+	padding: 30px 0;
+}
+
+article:first-child {
+	border-top: 1px dashed #a67c52;
+}
+
+article .text {
+	width: 70%;
+}
+
+article .text h3 {
+	font-weight: bold;
+	font-size: 1.75rem;/*28px相当*/
+	border-bottom: 2px solid #ffcd30;
+	margin-bottom: 15px;
+}
+
+article .text ul {
+	list-style: disc;
+	padding-left: 1.35em;
+}
+
+article .photo {
+	width: 400px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+/*診療の流れ--------------------------------------*/
+.flowContents h3 {
+	background: #28c6a8;
+	font-weight: bold;
+	font-size: 1.75rem;/*28px相当*/
+	border-radius: 25px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 15px;
+
+}
+
+.flowContents .flow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.flowContents .flow > div {
+	width: 30%;
+	text-align: center;
+	position: relative;
+}
+
+.flowContents .flow > div:nth-of-type(1)::after,
+.flowContents .flow > div:nth-of-type(2)::after {
+	content: "";
+	background: url(../images/medical_arrow.svg) no-repeat;
+	width: 10px;
+	height: 20px;
+	position: absolute;
+	top: 20%;
+	right: -10%;
+}
+
+.flowContents .flow h4 {
+	font-weight: bold;
+	font-size: 1.5rem;/*24px相当*/
+	color: #28c6a8;
+	border-bottom: 2px solid #ffcd30;
+	margin-bottom: 15px;
+	padding-bottom: 6px;
+}
+
+.flowContents .flow div p {
+	text-align: left;
+}
+
+/*初めて来院の方-------------------------------------*/
+.flowContents .caution {
+	display: flex;
+	border: 4px solid #ccc;
+	margin-bottom: 100px;
+}
+
+.flowContents .caution h5 {
+	background: #ccc;
+	font-size: 1.25rem; /*20px相当*/
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+}
+
+.flowContents .caution .text {
+	padding: 10px 20px;
+}
+
+.flowContents .caution .text ul {
+	list-style: disc;
+	padding-left: 1em;
+	margin-top: 5px;
+}
+
+/*タブレット以下での表示--------------------------------------*/
+@media screen and (max-width: 767px){
+
+	.title > p {
+		margin-bottom: 40px;
+	}
+
+	/*診療案内--------------------------------------*/
+	article {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	article .text {
+		width: 100%;
+	}
+
+	article .text h3 {
+		font-size: 1.5rem;/*24px相当*/
+		margin-bottom: 25px;
+	}
+
+	article .photo {
+		width: 100%;
+		max-width: 500px;
+		margin: 0 0 25px 0 ;
+	}
+	
+	article .photo img {
+		width: 100%;
+	}
+	/*診療の流れ--------------------------------------*/
+	.flowContents h3 {
+		font-size: 1.5rem;/*24px相当*/
+		margin-bottom: 0;
+	}
+
+	.flowContents .flow {
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.flowContents .flow > div {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.flowContents .flow > div:nth-of-type(1)::after,
+	.flowContents .flow > div:nth-of-type(2)::after {
+		top: auto;
+		right: 50%;
+		transform: rotate(0.25turn);
+		margin: 20px 0;
+	}
+
+	.flowContents .flow h4 {
+		margin-bottom: 15px;
+	}
+
+	/*初めて来院の方-------------------------------------*/
+	.flowContents .caution {
+		flex-direction: column;
+		margin-bottom: 85px;
+	}
+}

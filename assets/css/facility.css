@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+main section:first-child {
+	margin-bottom: 100px;
+} 
+
+.infoarea > p {
+	margin-bottom: 70px;
+}
+
+.infoarea #contents {
+	margin-bottom: 70px;
+}
+
+.infoarea #contents img {
+	max-width: 100%;
+	border-radius: 15px;
+}
+
+.infoarea #contents p:nth-of-type(1) {
+	text-align: center;
+}
+
+.infoarea .i_line {
+	text-align: center;
+	margin: 0px 0 20px 0;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #ffcd30;
+	font-size: 1.75rem; /*28px相当*/
+	font-weight: bold;
+}
+
+.infoarea .resize {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.infoarea .resize li {
+	text-align: center;
+}
+
+.infoarea .resize li p {
+	margin: 5px 0 20px 0;
+	font-weight: bold;
+}
+
+.infoarea .resize img {
+	border-radius: 10px;
+	max-width: 100%;
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+}
+
+.infoarea .resize + p {
+	text-align: right;
+	font-size: 0.875rem; /*14px相当*/
+	color: #666;
+}
+
+#tab1 p:last-child,
+#tab2 p:last-child,
+#tab3 p:last-child,
+#tab4 p:last-child,
+#tab5  p:last-child{
+	min-height: 50px;
+}
+
+#tab1 p img,
+#tab2 p img,
+#tab3 p img,
+#tab4 p img,
+#tab5  p img {
+	margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 767px) {
+	.infoarea .resize {
+		flex-wrap: wrap;
+	}
+/* 
+	.infoarea .resize img {
+		width: 110px;
+		height: 110px;
+	} */
+
+}
+

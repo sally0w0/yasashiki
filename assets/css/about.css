@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+.introduction {
+  margin-bottom: 100px;
+}
+
+.introduction .inner > p {
+  margin-bottom: 70px;
+}
+
+.introduction .greet {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 40px;
+}
+
+.introduction .greet div:nth-of-type(1) {
+  width: 50%;
+}
+
+
+
+.introduction h3 {
+  font-size: 2.25rem; /*36px相当*/
+  color: #28c6a8;
+  border-left: 6px solid #ffcd30;
+  padding-left: 14px;
+  margin-bottom: 30px;
+}
+
+.introduction .greet img {
+  border-radius: 10px;
+}
+
+
+/* 院長紹介---------- */
+
+.profile {
+  display: flex;
+}
+
+.profile dt,
+.profile + dl dt {
+  color: #28c6a8;
+  font-weight: bold;
+}
+
+.profile > dl {
+  width: 50%;
+}
+
+.profile dl + div {
+  width: 50%;
+}
+
+.profile dl + div dl {
+  display: flex;
+}
+
+.profile > dl { /* 左の枠*/
+  display: flex;
+  border: 1px solid #28c6a8;
+}
+
+.profile dt,
+.profile dd {
+  padding: 10px;
+}
+
+.profile > div {
+  border: 1px solid #28c6a8; /*右の枠*/
+  border-left: none;
+} 
+
+.profile > div dl:last-child dd,
+.profile > div dl:last-child dt {
+  border-bottom: none;
+}
+
+.profile > div dt,
+.profile > div dd {
+  border-bottom: 1px solid #28c6a8;
+  
+}
+
+.profile dl dt {
+  width: 20%;
+}
+
+.profile dl dd {
+  width: 80%;
+}
+
+.profile + dl {
+  border: 1px solid #28c6a8; /*下の枠*/
+  border-top: none;
+}
+
+.profile + dl {
+  display: flex;
+}
+
+.profile + dl dt,
+.profile + dl dd {
+  padding: 10px;
+}
+
+.profile + dl dt {
+  width: 30%;
+}
+
+.profile + dl dd  {
+    width: 70%;
+    padding-right: 35px;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+
+  .introduction .inner > p {
+    margin-bottom: 40px;
+  }
+
+  .introduction .greet {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .greet > p {
+    margin-bottom: 40px;
+  }
+
+  .introduction h3 {
+    border-left: none;
+    text-align: center;
+    position: relative;
+    font-size: 1.875rem;
+  }
+
+  .introduction h3::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background: #ffcd30;
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -15%;
+  }
+
+  .introduction .greet div:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .profile,
+  .profile > dl,
+  .profile dl + div dl,
+  .profile + dl {
+    flex-direction: column;
+  }
+  
+  .profile + dl,
+  .profile > dl,
+  .profile dl + div { 
+    width: 100%;
+  }
+
+  .profile dl + div {
+    border: 1px solid #28c6a8;
+    border-top: none;
+  }
+
+  .profile dl dt,
+  .profile dl dd,
+  .profile + dl dt,
+  .profile + dl dd {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .profile > div dt,
+  .profile > div dd {
+    border: none;
+  }
+  
+  .profile + dl dd  {
+    padding-right: 10px;
+  }
+
+  .profile dd,
+  .profile + dl dd {
+    padding: 0 10px 10px;
+  }
+
+  .profile > div dl {
+    border-bottom: 1px solid #28c6a8;
+  }
+
+  .profile > div dl:nth-of-type(3) {
+    border-bottom: none;
+  }
+}

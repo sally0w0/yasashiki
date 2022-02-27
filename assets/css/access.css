@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+.addressPage {
+	margin-bottom: 100px;
+}
+
+.addressPage p:first-child {
+	margin-bottom: 70px;
+}
+
+.addressPage p:nth-of-type(2) {
+	margin-bottom: 70px;
+}
+
+.addressPage p:nth-of-type(2) img {
+	border-radius: 10px;
+}
+
+.accessMap {
+	display: flex;
+}
+
+.accessMap > div {
+	width: 50%;
+}
+
+.accessMap p {
+	width: 50%;
+}
+
+.accessMap dl dt,
+.accessMap dl dd {
+	padding: 10px 0 10px;
+}
+
+.accessMap dl dd {
+	border-top: 1px dotted #A67C52;
+}
+
+.accessMap dl div:last-child {
+	border-bottom: 1px dotted #A67C52;
+}
+
+.accessMap h2 {
+	font-size: 1.5rem; /*24px相当*/
+	color: #28c6a8;
+	/* margin-bottom: 10px; */
+}
+
+.accessMap dl dt {
+	float: left;
+	width: 24%;
+	font-weight: bold;
+}
+
+.accessMap > p {
+	margin-left: 60px;
+}
+
+.accessMap > p img {
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(229, 228, 181, .5);
+}
+
+
+.info {
+	clear: both;
+}
+
+@media screen and (max-width: 767px) {
+
+	.accessMap dl dt {
+		/* float: none; */
+		width: 5em;
+	}
+
+	.addressPage p:first-child {
+		margin-bottom: 40px;
+	}
+
+	.addressPage p:nth-of-type(2) {
+		margin-bottom: 40px;
+	}
+
+	.addressPage p:nth-of-type(2) {
+		text-align: center;
+	}
+
+	.accessMap {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.accessMap > div {
+		width: 100%;
+	}
+	
+	.accessMap p {
+		width: 100%;
+		text-align: center;
+	}
+
+	.accessMap dl dd {
+		margin-right: 0;
+	}
+
+	.accessMap h2 {
+		color: #28c6a8;
+		text-align: center;
+	}
+
+	.accessMap dl {
+		margin-bottom: 40px;
+	}
+
+	.accessMap > p {
+		margin-left: 0;
+	}
+
+	.addressPage {
+		margin-bottom: 85px;
+	}
+
+
+}
+

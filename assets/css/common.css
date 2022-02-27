@@ -1,0 +1,862 @@
+@charset "utf-8";
+
+html {
+	overflow-y: scroll;
+}
+body {
+	line-height: 1.5;
+	color: #333;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1{
+	font-weight: normal;
+}
+
+a:hover {
+	color: #fff;
+}
+
+input,
+#menu-btn-check,
+.menu-btn {
+	display: none;
+}
+
+
+/*カレント----------*/
+
+#home nav .home a,
+#about nav .about a,
+#medical nav .medical a,
+#facility nav .facility a,
+#machine nav .machine a,
+#access nav .access a {
+	background: #ffcd30;
+}
+
+#home footer .home a,
+#about footer .about a,
+#medical footer .medical a,
+#facility footer .facility a,
+#machine footer .machine a,
+#access footer .access a {
+	opacity: .5;
+}
+
+/*メインビジュアル用--------------------------------------- */
+.slider {
+	margin-bottom: 80px;
+	background: #eee;
+}
+
+.slider  .inner {
+	position: relative;
+	max-width: 1920px;
+}
+
+.slider #mainVisual {
+	max-width: 1920px;
+    margin: 0 auto;
+}
+
+.slider #mainVisual li img {
+	width: 100%;
+}
+
+#mainVisual {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* 診療時間------------------------- */
+.calendar {
+	width: 350px;
+	border-radius: 5px;
+}
+
+
+.slider .calendar {
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
+	position: absolute;
+	padding: 10px;
+	background-color: #fff;
+	right: 15px;
+	bottom: 20px;
+	min-width: 280px;
+}
+
+.slider table {
+	background: #fffcec;
+}
+
+table {
+	min-height: 130px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	font-size: 0.87rem; /*14px相当*/
+	width: 100%;
+	line-height: 1.2;
+	border: 1px solid #8ae6d6;
+}
+
+tr:first-child {
+	background-color: #28c6a8;
+	height: 30px;
+	color: #fff;
+}
+
+tr:nth-of-type(2) {
+	border-bottom: 1px solid #8ae6d6;
+}
+
+th {
+	text-align: center;
+	font-weight: bold;
+	width: 3em;
+}
+
+th:first-child  {
+	text-align: left;
+	width: 7em;
+	padding: 5px 10px;
+}
+
+tr td:first-child {
+	text-align: left;
+	padding: 5px 10px;
+}
+
+td, th {
+	text-align: center;
+	border-right: 1px solid #8ae6d6;
+}
+
+td:last-child, th:last-child {
+	border-right: none;
+}
+
+td img {
+    width: 30%;
+}
+
+.calendar  ul {
+	font-size: 0.75rem; /*12px相当*/
+	text-align: left;
+}
+
+/* 全体レイアウト用---------------------------------------*/
+.inner {
+	width: 100%;
+	max-width: 840px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.contents {
+	padding: 20px;
+}
+
+/* pc非表示 sp表示------------------- */
+.pcHidden {
+	display: none; 
+}
+
+.spHidden {
+	display: block; 
+}
+
+
+/* ----------－共通パーツ--------- */
+
+.tel {
+	font-family: Arial, Helvetica, sans-selif;
+	font-weight: bold;
+	font-size: 2.37rem; /*38px相当*/
+	line-height: 1;
+	color: #ffcd30; /*footerのcolorだけ別で変更*/
+}
+
+.tel::before {
+	content: url(../images/icon_tel_orange.svg);
+	margin-right: 5px;
+	display: inline-block;
+	width: 21px;
+}
+
+.logo {
+	width: 250px;
+}
+
+footer {
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* top以外の共通パーツ（診療のご案内）-------------------- */
+.caption {
+	background: url(../images/sub_mv_pc.jpg) no-repeat top center;
+	background-size: cover;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.caption h2 {
+	font-size: 2.25rem; /*36px相当*/
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 5px rgba(0, 0, 0, .75);
+	line-height: 180px;
+	margin-bottom: 70px;
+	letter-spacing: 0.1rem;
+}
+
+.caption p img {
+	width: 100%;
+}
+
+.caption p {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.info {
+  padding: 40px 0 60px 0;
+  background: #fffcec;
+}
+
+.info .inner {
+  display: flex;
+}
+
+.info .inner > div {
+  width: 40%;
+}
+
+.info .infoMenu {
+  margin: 0 50px 0 40px;
+}
+
+.character {
+	position: absolute;
+	left: calc(100% - 80px);
+	top: 100%;
+	width: 82px;
+	height: 88px;
+}
+
+.info h2 {
+  font-size: 1.5rem;
+  color: #28c6a8;
+  border-bottom: 2px solid #ffcd30;
+  margin-bottom: 15px;
+  margin-right: 25px;
+	padding-bottom: 6px;
+}
+
+.infoMenu h2 + div {
+	position: relative;
+}
+
+.info div a {
+  display: inline-block;
+  background: #28c6a8;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.info h2 + div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info h2 + div p {
+  margin: 0 8px 10px 0;
+	font-weight: bold;
+}
+
+.info .calendar table {
+  width: 350px;
+}
+
+.info .calendar ul {
+  width: 350px;
+}
+
+/*header---------------------------------------- */
+header {
+	padding-top: 10px ;
+	background: #fff;
+	font-size: 0.87rem; /*14px相当*/
+}
+
+header .inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .inner .headerShopName h1{
+	margin-bottom: 5px;
+}
+
+header .headerTime ul {
+	text-align: right;
+	width: 428px;
+}
+
+header .headerTime ul li:nth-of-type(2) {
+	float: left;
+}
+
+header .headerTime ul:nth-of-type(2) {
+	display: flex;
+}
+
+header .headerTime ul:nth-of-type(2) li + li {
+	margin-left: 20px;
+}
+
+/*nav---------------------------------------- */
+nav {
+	background: #28c6a8;
+	margin-top: 15px;
+}
+
+nav ul {
+	display: flex;
+	text-align: center;
+}
+
+nav li {
+	width: calc(100%/6);
+	border-right: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-left: 1px solid #fff;
+}
+
+nav ul li a {
+	display: block;
+	line-height: 50px;
+	position: relative;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	background: #ffcd30;
+}
+
+/* gotop-------------------------------------------------- */
+.gotop {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #ffffff;
+	text-align: center;
+	position: fixed;
+    bottom: 100px;
+    right: 30px;
+}
+
+.gotop img {
+	width: 50%;
+	margin-top: 15px;
+}
+
+/* scroll-------------------------------------------------- */
+
+#pageTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+		box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+#pageTop a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+	
+}
+#pageTop a:hover {
+    text-decoration: none;
+    background: #999;
+}
+
+
+
+
+/* footer-------------------------------------------------- */
+footer {
+	padding-bottom: 30px;
+	background: #28c6a8;
+	font-size: 0.87rem; /*14px相当*/
+}
+
+footer .inner .logo {
+	margin: 0 auto;
+}
+
+footer .logo + p,
+.footerNav + p {
+	text-align: center;
+}
+
+footer .logo + p {
+	margin-bottom: 30px;
+	color: #333;
+}
+
+footer .inner div:nth-of-type(1) {
+	text-align: center;
+}
+
+.footerLogo {
+	background: #fff;
+	display: inline-block;
+	border-radius: 0 0 10px 10px;
+	margin-bottom: 30px;
+	padding: 30px 8% 0;
+	box-shadow: 0 2px 2px rgb(20, 150, 125);
+}
+
+.footerLogo p + p {
+	margin: 15px 0;
+}
+
+footer .inner .contact {
+	display: flex;
+	justify-content: center; 
+	margin-bottom: 30px;
+}
+
+footer .inner .contact div {
+	border-right: 1px solid #fff;
+	padding: 0 20px;
+	width: 50%;
+	text-align: right;
+}
+
+footer .inner .contact div p:first-child {
+	margin-bottom: 5px;
+}
+
+footer .inner .contact .tel {
+	color: #fff;
+}
+
+footer .inner .contact .tel:before {
+	content: url(../images/icon_tel_white.svg);
+	display:inline-block;
+	width: 21px;
+}
+
+footer .inner .contact ul {
+	padding: 0 20px;
+	width: 50%;
+}
+
+footer .inner .contact ul li {
+	font-weight: bold;
+}
+
+footer .footerNav {
+	display:  flex;
+	justify-content: space-between; 
+	margin-bottom: 40px;
+}
+
+footer .footerNav li {
+	border-left: 1px solid #fff;
+	width: calc(100%/6);
+	text-align: center;
+}
+
+footer .footerNav li a {
+	font-weight: bold;
+}
+
+footer .footerNav li:last-child {
+	border-right: 1px solid #fff;
+}
+
+footer .footerNav li a {
+	display: block;
+}
+
+footer .footerNav li a:hover {
+	opacity: .5;
+}
+
+#check , #open {
+	display: none;
+}
+
+
+
+
+
+
+/*コンテンツ幅より狭い用----------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px){
+
+
+	.inner {
+		width: calc(100% - 40px);
+	}
+	
+	.headerTime {
+		display: none;
+	}
+
+	/* 共通パーツ------------------------- */
+	.pcHidden {
+		display: block; 
+	}
+
+	.spHidden {
+		display: none; 
+	}
+
+	.slider {
+		margin-bottom: 10px;
+	}
+	
+	.slider .calendar {
+		width: 40%;
+		box-shadow: none;
+		min-height: 130px;
+	}
+	
+	.slider .calendar th:first-child {
+		width: 6em;
+		padding: 5px;
+	}
+
+	.logo {
+		width: 200px;
+	}
+
+	/* top以外の共通パーツ（診療のご案内）-------------------- */
+	.caption {
+		background: url(../images/sub_mv_sp.jpg) no-repeat top center;
+		background-size: cover;
+		max-width: 767px;
+		margin: 0 auto;
+		/* line-height: 359px; */
+	}
+	
+	.caption h2 {
+		font-size: 1.875rem;
+		margin-bottom: 40px;
+	}
+
+	.info {
+		padding: 35px 0 40px 0;
+	}
+	
+  .info .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info .inner > div {
+    width: 100%;
+  }
+
+  .info h2 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info .calendar table {
+    width: 100%;
+  }
+
+  .info .calendar ul {
+    width: 100%;
+  }
+
+  .info .inner div:first-child {
+    margin-bottom: 100px;
+  }
+
+
+/*バーガーメニュー--------------------------------------- */
+#menu-btn-check,
+.menu-btn {
+	display: block;
+}
+
+.hamburger-menu {
+	position: relative;
+	top: 16px;
+}
+
+.menu-btn { /*ボタンスタイル*/
+	position: fixed;
+	top: 28px;
+	right: 30px;
+	height: 50px;
+	width: 40px;
+	z-index: 2;
+	/* opacity: 0; */
+	position: absolute;
+	top: -60px;
+	right: 20px;
+}
+
+.menu-btn:before, 
+.menu-btn:after { /*ハンバーガーの線*/
+	content: "";
+	width: 43px;
+	height: 4px;
+	background: #28c6a8;
+	display: block;
+	position: absolute;
+}
+
+.menu-btn:after{/*上の線*/
+	top: -5px;
+	transition: all .3s;
+}
+
+.menu-btn:before {/*下の線*/
+	top: 20px;
+	transition: all .2s;
+}
+
+.menu-btn span {
+	padding-top: 27px;
+	transition: all .3s;
+	color: #28c6a8;
+}
+
+.menu-btn span:before {/*真ん中の線*/
+	content: "";
+	width: 43px;
+	height: 4px;
+	background: #28c6a8;
+	display: block;
+	position: absolute;
+	top: 7px;
+	transition: all .3s;
+}
+
+#menu-btn-check {
+	display: none;
+}
+
+.menu-content {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+	width: 70%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 100%;
+	z-index: 1;
+	background-color: #28c6a8;
+	transition: all 0.5s;/*アニメーション設定*/
+}
+
+.menu-btn span {
+	position: absolute;
+	top: 0;
+}
+
+/* ハンバーガー クリックされた時のアクション */
+#menu-btn-check:checked ~ .menu-content {
+	left: 30%;
+	padding-top: 84.53px;
+}
+
+#menu-btn-check ~ .menu-content {
+	padding-top: 84.53px;
+}
+
+.active span {
+	opacity: 0;
+}
+
+.active .menu-btn:after {/*上の線*/
+	transform: translateY(15px) rotate(45deg);
+	background: #fff;
+}
+
+.active .menu-btn:before {/*下の線*/
+	transform: translateY(-9px) rotate(-45deg);
+	background: #fff;
+}
+
+.active .menu-btn span:before {/*真ん中の線*/
+	opacity: 0;
+}
+.active {
+	position: fixed;
+	right: 0px;
+	top: 86px;
+	z-index: 50;
+}
+
+/*中身--------------------------------------- */
+	header {
+		padding-bottom: 15px;
+	}
+
+	header .inner {
+		display: block;
+	}
+
+	header .menu-content .inner {
+		width: 100%;
+	}
+
+	nav .inner {
+		flex-direction: column;
+	}
+
+	nav {
+		margin-top: 0;
+	}
+
+	nav ul {
+		text-align: left;
+	}	
+	
+	nav ul li {
+		border-bottom: solid 1px #ffffff;
+		border-right: none;
+		width: 100%;
+	}
+
+	nav li:first-child {
+		border-left: none;
+		border-top: solid 1px #ffffff;
+	}
+
+	nav ul li a {
+		padding-left: 1em;
+	}
+
+	nav ul li a::before {
+		content: "";
+		width: 7px;
+		height: 7px;
+		border-top: solid 2px #fff;
+		border-right: solid 2px #fff;
+		transform: rotate(45deg);
+		position: absolute;
+		right: 40px;
+		top: 20px;
+	}
+
+	.headerTime {
+		position: static;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	
+	.headerTime ul:nth-of-type(1) {
+		flex-direction: column;
+	}
+	
+	header .headerTime ul:nth-of-type(1) li + li {
+	margin-left: 0px;
+	}
+
+	.tel {
+		margin-bottom: 10px;
+	}
+
+
+/*SP端末用------------------------------------------------------------------------------------------------------------------*/
+
+	
+	.slider #mainVisual {
+		margin-bottom: 30px;
+	}
+	
+	.inner {
+		padding: 0;
+	}
+
+	
+	/* ----------header---------- */
+	header .inner .headerShopName h1{
+		margin-bottom: 5px;
+	}
+
+	/* ----------footer---------- */
+	footer .inner .contact {
+		display: flex;
+		flex-direction: column; 
+	}
+
+	footer .inner .contact div {
+		border-right: none;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		text-align: center;
+		padding: 0 0 10px 0;
+	}
+
+	footer .inner .contact ul {
+		padding: 10px 0;
+		width: 100%;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	footer .footerNav {
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+
+	footer .footerNav li {
+		border-left: 0;
+		border-top: 1px solid #fff;
+		width: 100%;
+	}
+
+	footer .footerNav li:last-child {
+		border-right: 0;
+		border-bottom: 1px solid #fff;
+	}
+
+	footer .footerNav li a {
+		line-height: 4;
+	}
+
+
+}
